@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Style/dangkimon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Đặt Món</title>
+<link rel="icon" href="Images/img1.png">
+
+</head>
+<body>
+
+<h2>Kiểm Tra Đặt Hàng</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="#">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Hóa Đơn</h3>
+            <label for="fname"><i class="fa fa-user"></i> Họ và tên</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nhập Tên (*)">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Nhập Gmail (*)">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+            <input type="text" id="adr" name="address" placeholder="Nhập địa chỉ (*)">
+            <label for="city"><i class="fa fa-institution"></i>Yêu cầu</label>
+            <input type="text" id="city" name="city" placeholder="Nếu có yêu cầu khác (*)">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state"><i class="fa-solid fa-phone"></i> Số điện thoại</label>
+                <input type="text" id="state" name="state" placeholder="Nhập số liên hệ (*)">
+              </div>
+              <div class="col-50">
+                <label for="cmnd"><i class="fa-solid fa-address-card"></i> Số CMND / CCCD</label>
+                <input type="text" id="zip" name="zip" placeholder="Số CMND / CCCD (*)">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Thanh Toán</h3>
+            <input type="checkbox" checked="checked" name="sameadr" "> Thanh toán bằng thẻ
+            <div class="icon-container">
+        
+              <i class="fa-brands fa-cc-visa" style="color:blue;"></i>
+              <i class="fa-brands fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa-solid fa-money-check"></i>
+              <i class="fa-brands fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Tên Chủ Thẻ</label>
+              <input type="text" id="cname" name="cardname" placeholder="Tên được in trên Thẻ">
+              <label for="ccnum">Số Thẻ</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+            
+              <div class="row">
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr" style="margin: 20px;"> Thanh toán bằng tiền mặt khi nhận hàng
+              </label>
+              </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Giao đến địa chỉ đã cung cấp
+        </label>
+        <input type="submit" value="Kiểm Tra Và Đặt Hàng" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Giỏ hàng <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> 
+      <b>4</b></span></h4>
+        <p><select name="" id=""> 
+            <option value="0">Chọn Món:</option>
+            <option value="1">Món ăn 1</option>
+            <option value="2">Món ăn 2</option>
+            <option value="3">Món ăn 3</option>
+            <option value="4">Món ăn 4</option>
+            <option value="5">Món ăn 5</option>
+            <option value="6">Món ăn 6</option>
+            <option value="7">Món ăn 7</option>
+            <option value="8">Món ăn 8</option>
+            <option value="9">Món ăn 9</option>
+            <option value="10">Món ăn 10</option>
+            </select>
+        <span class="price">...VNĐ</span></p>
+        <p><select name="" id=""> <option value="0">Chọn Món:</option>
+            <option value="1">Món ăn 1</option>
+            <option value="2">Món ăn 2</option>
+            <option value="3">Món ăn 3</option>
+            <option value="4">Món ăn 4</option>
+            <option value="5">Món ăn 5</option>
+            <option value="6">Món ăn 6</option>
+            <option value="7">Món ăn 7</option>
+            <option value="8">Món ăn 8</option>
+            <option value="9">Món ăn 9</option>
+            <option value="10">Món ăn 10</option>
+            </select>
+            <span class="price">...VNĐ</span></p>
+          <p><select name="" id=""> <option value="0">Chọn Món:</option>
+              <option value="1">Món ăn 1</option>
+              <option value="2">Món ăn 2</option>
+              <option value="3">Món ăn 3</option>
+              <option value="4">Món ăn 4</option>
+              <option value="5">Món ăn 5</option>
+              <option value="6">Món ăn 6</option>
+              <option value="7">Món ăn 7</option>
+              <option value="8">Món ăn 8</option>
+              <option value="9">Món ăn 9</option>
+              <option value="10">Món ăn 10</option>
+              </select>
+              <span class="price">...VNĐ</span></p>
+          <p><select name="" id=""> <option value="0">Chọn Món:</option>
+              <option value="1">Món ăn 1</option>
+              <option value="2">Món ăn 2</option>
+              <option value="3">Món ăn 3</option>
+              <option value="4">Món ăn 4</option>
+              <option value="5">Món ăn 5</option>
+              <option value="6">Món ăn 6</option>
+              <option value="7">Món ăn 7</option>
+              <option value="8">Món ăn 8</option>
+              <option value="9">Món ăn 9</option>
+              <option value="10">Món ăn 10</option>
+              </select>
+              <span class="price">...VNĐ</span></p>
+      <hr>
+      <p>Tổng cộng <span class="price" style="color:black"><b>.......VNĐ</b></span></p>
+    </div>
+  </div>
+</div>
+<div class="cuoi">
+  <a class="goback" href="Trangchu.html#thucdon">GO BACK</a>
+</div>
+
+</body>
+</html>

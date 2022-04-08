@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Bàn</title>
+    <link rel="stylesheet" href="Style/dangki.css">
+    <link rel="icon" href="Images/img1.png">
+   
+    <script lang="Javascript">
+      function CheckDonHang()
+      {
+        var hoTen = document.getElementById("hoten");
+        if(hoTen.value=="")
+            {
+                alert("Vui lòng nhập Họ tên.");
+                hoten.focus();
+                return false;
+            }
+        var cmnd = document.getElementById("cmnd");
+          if(cmnd.value=="")
+            {
+                alert("Vui lòng nhập Số CMND/ CCCD.");
+                cmnd.focus();
+                return false;
+            }
+          if(isNaN(cmnd.value)==true)
+          {
+            alert("SỐ CMND/CCCD phải là số.")
+            cmnd.value="";
+            cmnd.focus();
+            return false;
+          }
+          var diachiss = document.getElementById("diachi");
+          if(diachiss.value=="")
+            {
+                alert("Vui lòng nhập địa chỉ.");
+                diachiss.focus();
+                return false;
+            }
+
+          var Email= document.getElementById("Email")
+          re=/\w+@\.\w+/;
+          if(Email.value==""){
+            alert("Bạn chưa nhập Email.")
+          
+            return false;
+          }
+          var sl = document.getElementById("soluong").value
+          if(sl =="")
+          {
+            alert("Bạn chưa nhập số lượng người.")
+            return false;
+          }
+          if(isNaN(sl)==true)
+          {
+            alert("SỐ lượng người phải là số.")
+            sl.value="";
+            sl.focus();
+            return false;
+          }
+        alert("Đặt bàn thành công! Thông tin đã được gửi qua Gmail. Vui lòng kiểm tra!");
+        return true;
+      }
+    </script>
+</head>
+<body>
+    <div>
+        <a href="Trangchu.html"><div class="logo"><img src="Images/img1.png" alt="logothuonghieu"></div></a>
+    </div>
+    <form action="" onsubmit=" return CheckDonHang()" >
+        <div class="container">
+          <h1>Đặt Bàn</h1>
+          <p>Xin hãy nhập biểu mẫu bên dưới để đặt bàn.</p>
+          <hr>
+         <label for="tdn"><b>Họ và tên</b></label>
+          <input id="hoten" type="text" placeholder="Nhập Tên" name="txtHoTen" required>
+          <label for="tdn"><b>Số CMND/ CCCD</b></label>
+          <input id="cmnd" type="text" placeholder="Nhập CMND/ CCCD" name="cmnd" required>
+          <label for="tdn"><b>Địa chỉ</b></label>
+          <input id="diachi" type="text" placeholder="Nhập Địa Chỉ" name="diachi" required>
+         <label for="email"><b>Email</b></label>
+          <input id="Email" type="text" placeholder="Nhập Email" name="txtEmail" required>
+         <label for="psw"><b>Số lượng quý khách cần đặt:</b></label>
+          <input id="soluong" type="text"  placeholder="Bao nhiêu người" name="soluong" required>
+          </label>
+         <div class="clearfix">
+            <button type="submit" class="signupbtn" onclick="return CheckDonHang()">Đặt Bàn</button>
+          </div>
+        </div>
+      </form>
+      <a class="goback" href="Trangchu.html#thucdon">GO BACK</a>
+</body>
+</html>
